@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+import {interval, of} from "rxjs";
 
 @Component({
   selector: 'book-root',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./book.component.scss']
 })
 export class BookComponent {
-  title = 'a';
+  constructor() {
+    const obs = interval(500).subscribe(data => console.log(data))
+
+    setTimeout(() => {
+      obs.unsubscribe()
+    }, 2000)
+  }
 }

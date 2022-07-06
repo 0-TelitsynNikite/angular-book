@@ -1,0 +1,27 @@
+:host {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  flex: 1 1 auto;
+  width: 100%;
+  padding: 16px 0 18px 40px;
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 1px solid #D8D8D8;
+  
+  img {
+    cursor: pointer;
+  }
+}
+
+.main {
+  flex: 10 1 auto;
+  padding: 24px 40px;
+}
+
+.footer {
+  flex: 1 0 auto;
+}
+

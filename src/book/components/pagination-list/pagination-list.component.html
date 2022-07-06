@@ -1,0 +1,6 @@
+<ul class="pagination-list">
+  <li *ngFor="let number of numberOfPages"
+      class="pagination-list__item">
+    <a routerLink={{number}}  routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">{{number}}</a>
+  </li>
+</ul>
